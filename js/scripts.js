@@ -55,7 +55,7 @@ $(document).ready(function(){
     $(".empty").hide();
     $(".emailButton").show();
     totalOrderPrice.push["bagTotalPrice"];
-    alert(totalOrderPrice);
+    // alert(totalOrderPrice);
   });
   $("form#journal").submit (function(event){
     event.preventDefault();
@@ -67,7 +67,7 @@ $(document).ready(function(){
     $(".empty").hide();
     $(".emailButton").show();
 
-    alert("$" + journalTotalPrice);
+    // alert("$" + journalTotalPrice);
 
   });
   $("form#tour").submit (function(event){
@@ -79,13 +79,29 @@ $(document).ready(function(){
     $(".empty").hide();
     $(".emailButton").show();
 
-    alert("$" + tourPrice.toFixed(2));
+    // alert("$" + tourPrice.toFixed(2));
 
   });
 
   $("button#emailShow").click (function(){
     $(".submitEmail").toggle();
     var totalOrderPrice = addThreeNumbers(bagTotalPrice,journalTotalPrice,tourPrice);
-    alert(totalOrderPrice);
+    // alert(totalOrderPrice);
+    $(".emailButton").hide();
   });
+
+  $("form#emailSubmit").submit (function(event){
+    event.preventDefault();
+    var userEmail = $("input#userEmail").val();
+    var userAddress = $("input#userAddress").val();
+    var userCity = $("input#userCity").val();
+    var userState = $("select#userState").val();
+    var userZip = $("input#userZip").val();
+    alert(userEmail);
+    alert(userAddress);
+    alert(userCity);
+    alert(userState)
+    alert(userZip);
+  });
+
 });

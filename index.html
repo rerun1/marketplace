@@ -27,35 +27,36 @@
             <h1>Marketplace</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
           </div>
+        </div>
         <form id="bag">
           <div class="form-row">
-            <div class="form-group col shop">
-                <img src="img/bags.jpg" alt="Waterproof bags">
-            </div>
-            <div class="form-group col shop">
-              <h2>waterproof bag</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt. <span class="robotoBlack price">PRICE:&nbsp;$10.00</span></p>
-              <div class="form-inline">
-                <label for="quantity">Quantity &nbsp;</label>
-                <input type="number" class="form-control" id="quantity" min="1" step="1" placeholder="enter quantity">
+              <div class="form-group col shop">
+                  <img src="img/bags.jpg" alt="Waterproof bags">
               </div>
-              <div class="form-inline topMargin">
-              <label for="color">Color &nbsp;</label>
-              <select class="custom-select" id="color">
-                <option selected>blue</option>
-                <option>red</option>
-                <option>green</option>
-                <option>pink</option>
-              </select>
+              <div class="form-group col shop">
+                <h2>waterproof bag</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt. <span class="robotoBlack price">PRICE:&nbsp;$10.00</span></p>
+                <div class="form-inline">
+                  <label for="quantity">Quantity &nbsp;</label>
+                  <input type="number" class="form-control" id="quantity" min="1" step="1" placeholder="enter quantity">
+                </div>
+                <div class="form-inline topMargin">
+                <label for="color">Color &nbsp;</label>
+                <select class="custom-select" id="color">
+                  <option selected>blue</option>
+                  <option>red</option>
+                  <option>green</option>
+                  <option>pink</option>
+                </select>
+                </div>
+                <div class="cartButton">
+                  <button type="submit" class="btn">add to cart</button>
+                </div>
+                <div class="form-inline">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="checkoutCart" viewBox="0 0 64 64"><path class="formCart" d="M60.74,13.43l-45.23.17-.59-2.7,0-.08a2.38,2.38,0,0,0-2.34-2H2.7A2.38,2.38,0,0,0,.32,11.19h0A2.38,2.38,0,0,0,2.7,13.56h7.94l6.65,30.28-2.07,4.89a2.35,2.35,0,0,0-.42,1.34,2.38,2.38,0,0,0,2.37,2.37h2.38a4.79,4.79,0,1,0,.27,0H53.69a4.79,4.79,0,1,0,.27,0h1.88a2.37,2.37,0,0,0,0-4.75H20.9L21.63,46a4.33,4.33,0,0,0,.19-.58,2.33,2.33,0,0,0,.3-1.74l-.27-1.23L60.74,38a2.65,2.65,0,0,0,2.64-2.64V16.07A2.65,2.65,0,0,0,60.74,13.43Z"/></svg>
+                    <label class="checkoutText"> &nbsp; Checkout Items</label>
+                </div>
               </div>
-              <div class="cartButton">
-                <button type="submit" class="btn">add to cart</button>
-              </div>
-              <div class="form-inline">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="checkoutCart" viewBox="0 0 64 64"><path class="formCart" d="M60.74,13.43l-45.23.17-.59-2.7,0-.08a2.38,2.38,0,0,0-2.34-2H2.7A2.38,2.38,0,0,0,.32,11.19h0A2.38,2.38,0,0,0,2.7,13.56h7.94l6.65,30.28-2.07,4.89a2.35,2.35,0,0,0-.42,1.34,2.38,2.38,0,0,0,2.37,2.37h2.38a4.79,4.79,0,1,0,.27,0H53.69a4.79,4.79,0,1,0,.27,0h1.88a2.37,2.37,0,0,0,0-4.75H20.9L21.63,46a4.33,4.33,0,0,0,.19-.58,2.33,2.33,0,0,0,.3-1.74l-.27-1.23L60.74,38a2.65,2.65,0,0,0,2.64-2.64V16.07A2.65,2.65,0,0,0,60.74,13.43Z"/></svg>
-                  <label class="checkoutText"> &nbsp; Checkout Items</label>
-              </div>
-            </div>
           </div>
         </form>
         <form id="journal">
@@ -118,23 +119,51 @@
           </div>
         </form>
       </div>
-    </div>
-    <div class="cart">
-      <h1>Your Items</h1>
-      <p>You have <span class="empty">no items in your cart.</span><span class="cartItems"></span>  <br>
-
-      <button id="goShopping" type="button" class="btn">Return to Marketplace</button><br>
-
-      </p>
-      <div class="emailButton">
-        <p>To review your order and receive a confirmation please click below</p>
-        <button id="emailShow" type="button" class="btn">Confirmation Email</button>
-      </div>
-      <div class="submitEmail">
-        <form id="email">
-          <h2>Confirm and Place Order</h2>
-          <p>Thanks for ordering your <span class="cartItems"></span>. The total cost of your order is <span class="price"></span>. Enter your email and the address</p>
-        </form>
+      <div class="cart">
+        <h1>Your Items</h1>
+        <p>You have <span class="empty">no items in your cart.</span><span class="cartItems"></span> <br>
+        <button id="goShopping" type="button" class="btn">Return to Marketplace</button><br>
+        </p>
+        <div class="emailButton">
+          <p>To review your order and receive a confirmation please click below</p>
+          <button id="emailShow" type="button" class="btn">Confirmation Email</button>
+        </div>
+        <div class="submitEmail">
+          <form id="emailSubmit">
+            <h2>Confirm and Place Order</h2>
+            <p>Thanks for ordering your <span class="cartItems"></span>. The total cost of your order is <span class="price"></span>. Enter your email and the address</p>
+            <div class="form-row">
+              <div class="col">
+                <div class="form-group">
+                  <label for="userEmail">Email Address</label>
+                  <input type="email" id="userEmail" class="form-control" aria-describedby="email help" placeholder="enter email">
+                  <small id="emailHelp" class="form-text text-muted">We won't share email with anyone</small>
+                </div>
+                <label for="userAddress">Adress</label>
+                <input type="text" id="userAddress"class="form-control" placeholder="Address">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col-6 address2Space">
+                  <input type="text" id="userCity" class="form-control" placeholder="City">
+              </div>
+              <div class="col-4 address2Space">
+                <select id="userState" class="form-control" aria="zip code">
+                  <option selected>State...</option>
+                  <option>...</option>
+                </select>
+              </div>
+              <div class="col-2 address2Space">
+                  <input type="text" id="userZip" class="form-control" aria="zip code" placeholder="zip">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col address2Space">
+                <button type="submit" class="btn cartButton">Send me confirmation</button>
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </body>
